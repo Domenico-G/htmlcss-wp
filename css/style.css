@@ -6,8 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
 .container-page {
-  position: relative;
   width: 100%;
   background: url("../img/bg.png");
 }
@@ -16,25 +19,69 @@
   float: left;
 }
 
-/* end stili generali/utilities */
+/* end stili generali/utilities ---------------------------*/
 
-/* Stili header */
+/* Stili header --------------------------------------------*/
 
+/* stili logo e slogan */
 header {
   width: 1300px;
-  margin: 0 auto;
-  height: 200px;
-  padding: 10px 0px;
+  margin: 0px auto;
+  padding:30px 0px 10px 0px;
 }
 
-.content-header{
-  height: 100%;
-  background: blue;
+.container-head{
+  padding: 10px;
+  background: #fff;
 }
 
-/* end Stili header */
+.row-head {
+  position: relative;
+  height: 400px;
+  background: url("../img/bg-header.png") no-repeat center center;
+  background-size: cover;
+}
 
-/* stili main */
+.logo-slogan{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo-slogan > h1 {
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%
+}
+/* end stili logo e slogan */
+
+/* stili menu */
+.container-menu {
+  background: #666666;
+}
+
+.container-menu {
+  text-align: center;
+}
+
+.container-menu > ul > li {
+  list-style: none;
+  display: inline-block;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* stili menu */
+
+/* end Stili header ----------------------------------------------*/
+
+/* stili main -------------------------------------------------------*/
 
 main {
   width: 1300px;
@@ -44,7 +91,7 @@ main {
   clear: both;
 }
 
-/* stili main */
+/* stili main -------------------------------------------------------*/
 
 /* Stili colonne */
 
@@ -68,7 +115,6 @@ main {
 .content-col-c{
   height: 500px;
   background:  #aa00ff;
-  position: relative;
 }
 
 .sidebar-content{
@@ -83,7 +129,6 @@ main {
 footer {
   width: 1300px;
   margin: 0 auto;
-  position: relative;
   height: 200px;
   background: #4ddbff;
   margin-top: 10px;
