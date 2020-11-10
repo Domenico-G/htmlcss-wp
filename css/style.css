@@ -46,7 +46,7 @@ header {
   position: relative;
   height: 400px;
   background: url("../img/bg-header.png") no-repeat center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .logo-slogan{
@@ -195,7 +195,7 @@ footer {
 
 }
 
-.container-footer > p {
+.row-footer > p {
   text-align: center;
   color: #ccc;
   font-size: 20px;
@@ -204,8 +204,21 @@ footer {
 }
 
 .row-icon {
-  height: 100px;
-  background: red;
+  width: 100%
+}
+
+.box-icon {
+  position: relative;
+  height: 135px;
+  width: 33.3333%;
+}
+
+.box-icon > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter:opacity(25%);
 }
 
 /* endstili footer */
