@@ -1,0 +1,92 @@
+/* stili generali/utilities */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-page {
+  position: relative;
+  width: 100%;
+  background: url("../img/bg.png");
+}
+
+.float-l {
+  float: left;
+}
+
+/* end stili generali/utilities */
+
+/* Stili header */
+
+header {
+  width: 1300px;
+  margin: 0 auto;
+  height: 200px;
+  padding: 10px 0px;
+}
+
+.content-header{
+  height: 100%;
+  background: blue;
+}
+
+/* end Stili header */
+
+/* stili main */
+
+main {
+  width: 1300px;
+  margin: 0 auto;
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* stili main */
+
+/* Stili colonne */
+
+.col:first-child, .col:nth-child(3) {
+  width: 25%;
+}
+
+.col:nth-child(2) {
+  width: 50%;
+}
+
+/* end Stili colonne */
+
+/* stili contenuti colonne */
+.content-col-l {
+  height: 900px;
+  margin-right: 10px;
+  background: #cc99ff;
+}
+
+.content-col-c{
+  height: 500px;
+  background:  #aa00ff;
+  position: relative;
+}
+
+.sidebar-content{
+  height: 220px;
+  margin: 0 0 10px 10px;
+  background: #cc99ff;
+}
+
+/* end stili contenuti colonne */
+
+/* stili footer */
+footer {
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  height: 200px;
+  background: #4ddbff;
+  margin-top: 10px;
+}
+
+/* endstili footer */
