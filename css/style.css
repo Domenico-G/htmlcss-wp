@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Kanit', sans-serif;
+  background: url("../img/bg.png");
 }
 
 .container-page {
@@ -17,6 +18,12 @@ body {
 
 .float-l {
   float: left;
+}
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 /* end stili generali/utilities ---------------------------*/
@@ -31,7 +38,7 @@ header {
 }
 
 .container-head{
-  padding: 10px;
+  padding: 5px;
   background: #fff;
 }
 
@@ -39,7 +46,7 @@ header {
   position: relative;
   height: 400px;
   background: url("../img/bg-header.png") no-repeat center center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .logo-slogan{
@@ -86,14 +93,9 @@ header {
 main {
   width: 1300px;
   margin: 0 auto;
-  content: '';
-  display: table;
-  clear: both;
 }
 
-/* stili main -------------------------------------------------------*/
-
-/* Stili colonne */
+/* Stili generali colonne */
 
 .col:first-child, .col:nth-child(3) {
   width: 25%;
@@ -103,27 +105,80 @@ main {
   width: 50%;
 }
 
-/* end Stili colonne */
+/* end Stili generali colonne */
 
-/* stili contenuti colonne */
-.content-col-l {
-  height: 900px;
-  margin-right: 10px;
-  background: #cc99ff;
+/* stili contenuti colonna sinistra */
+.contain-col-l {
+  margin-right: 70px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+
+.contain-col-l > ul > li {
+  list-style: none;
+  padding: 5px;
+  font-size: 18px;
+  color: #009900;
+  line-height: 1.3;
+}
+
+.icon-text > h2 {
+  width: 50%;
+  font-weight: 500;
+  padding-left: 3px;
+}
+
+/* end stili contenuti colonna sinistra */
+
+/* Stili colonna centrale  */
 
 .content-col-c{
-  height: 500px;
-  background:  #aa00ff;
+  background:  #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+.content-col-c > h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.content-col-c > p {
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* end Stili colonna centrale  */
+
+/*stili contenuti colonna destra */
 
 .sidebar-content{
-  height: 220px;
-  margin: 0 0 10px 10px;
-  background: #cc99ff;
+  margin: 0 0 40px 70px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* end stili contenuti colonne */
+.sidebar-content > h2 {
+  font-weight: 500;
+}
+
+.sidebar-content > p {
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* end stili contenuti colonna destra */
+
+/* stili main -------------------------------------------------------*/
+
 
 /* stili footer */
 footer {
