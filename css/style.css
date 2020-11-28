@@ -8,11 +8,13 @@
 
 body {
   font-family: 'Kanit', sans-serif;
+  background: url("../img/bg.png");
 }
 
 .container-page {
   width: 100%;
-  background: url("../img/bg.png");
+  width: 1300px;
+  margin: 0px auto;
 }
 
 .float-l {
@@ -31,21 +33,16 @@ body {
 
 /* stili logo e slogan */
 header {
-  width: 1300px;
-  margin: 0px auto;
   padding:30px 0px 10px 0px;
 }
 
-.container-head{
-  padding: 5px;
-  background: #fff;
-}
 
-.row-head {
+.container-head {
   position: relative;
   height: 400px;
   background: url("../img/bg-header.png") no-repeat center center;
   background-size: cover;
+  border: 10px solid #fff;
 }
 
 .logo-slogan{
@@ -55,6 +52,10 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.logo-slogan > img {
+  height: 250px;
 }
 
 .logo-slogan > h1 {
@@ -67,9 +68,6 @@ header {
 /* stili menu */
 .container-menu {
   background: #666666;
-}
-
-.container-menu {
   text-align: center;
 }
 
@@ -88,11 +86,6 @@ header {
 /* end Stili header ----------------------------------------------*/
 
 /* stili main -------------------------------------------------------*/
-
-main {
-  width: 1300px;
-  margin: 0 auto;
-}
 
 /* Stili generali colonne */
 
@@ -180,10 +173,6 @@ main {
 
 
 /* stili footer */
-footer {
-  width: 1300px;
-  margin: 0 auto;
-}
 
 .container-footer {
   margin-bottom: 20px;
